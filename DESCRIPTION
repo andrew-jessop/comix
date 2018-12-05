@@ -1,0 +1,16 @@
+Package: comix
+Type: Package
+Title: Compare Linear Mixed-Effects Models in lme4
+Version: 0.1.0
+Author: Andrew Jessop
+Maintainer: Andrew Jessop <andrjessop@gmail.com>
+Description: Implements hypothesis testing for fully-specified mixed-effects models in lme4 via sequential model decompositon with likelihood ratio tests or bootstrapping.
+License: GPL (>=2)
+Encoding: UTF-8
+LazyData: true
+Imports:
+  boot,
+  lme4,
+  broom,
+  pbkrtest
+RoxygenNote: 6.1.0.9000
