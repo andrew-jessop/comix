@@ -8,6 +8,8 @@
 #' lmercomp()
 
 lmercomp <- function(origmodel, resdf=data.frame(), compdf=data.frame(), bootstr=FALSE){
+  # Return fixed effects for bootstrap
+  fixefBoot <- function(fit) {return(fixef(fit))}
   pv <- function(val) { paste( "=", sub("^(-?)0.", "\\1.", sprintf("%.3f", val))) }
   if (bootstr == FALSE){
     compmodel <- refitML(origmodel)
