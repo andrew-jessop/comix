@@ -3,7 +3,7 @@
 #' This function allows you run mixed-effects model comparisons with bootstrapping switched on or off
 #' @keywords bootstrapping, comparisons, mixed
 #' @export
-#' @examples
+#' @examples 
 #' lmercomp()
 
 # Function for running bootstrapped model comparisons in Mixed-Effect Models
